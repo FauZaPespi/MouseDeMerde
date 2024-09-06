@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .custom-cursor {
+    position: absolute;
+    width: 32px; /* Adjust the size based on your image */
+    height: 32px;
+    background-image: url('cursor.png'); /* Replace with the path to your custom cursor image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events: none; /* Ensure the custom cursor doesn't block interactions */
+    transform-origin: center;
+    z-index: 9999; /* Keep it on top of other elements */
+    transform: translate(50%, 50%) rotate(45deg); /* Start with a 45-degree diagonal orientation */
+  }
+  
+  button {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+  }
+  button:hover {
+    
+  }
